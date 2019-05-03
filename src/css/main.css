@@ -5313,4 +5313,7 @@ footer {
   .price small {
     font-weight: 400; }
   .price .fas {
-    margin-right: 0.5em; }
+    margin-right: 0.5em;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg); }

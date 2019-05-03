@@ -36,25 +36,25 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="#home"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Music</a>
+            <a class="nav-link" href="#music">Our Music</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Upcoming Shows</a>
+            <a class="nav-link" href="#upcoming">Upcoming Shows</a>
           </li>
         </ul>
       </div>
     </nav>
     <!--/navbar-->
     <!--header-->
-    <section class="hero text-center">
+    <section id="home" class="hero text-center">
       <div class="container">
         <h1 class="display-1">We are hot</h1>
         <div class="row justify-content-center">
@@ -72,7 +72,7 @@
     </section>
     <!--/header-->
     <!--about-->
-    <section class="about">
+    <section id="about" class="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 about-title d-flex align-items-center justify-content-center">
@@ -97,41 +97,54 @@
     <!--cards-->
       <div class="container text-center band-members">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="card border-0 band-member">
               <img
-                src="https://picsum.photos/150/120?random=1"
+                src="src/img/anthony.jpg"
                 alt="our singer"
                 class="card-img-top img-fluid"
               />
               <div class="card-body">
-                <h3 class="card-title text-primary band-member-name">Jhonny Singer</h3>
+                <h3 class="card-title text-primary band-member-name">Anthony Kiedis</h3>
                 <p class="card-text band-member-position">Lead singer</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="card border-0 band-member">
               <img
-                src="https://picsum.photos/150/120?random=2"
+                src="src/img/flea.jpg"
                 alt="our guitarist"
                 class="card-img-top img-fluid"
               />
               <div class="card-body">
-                <h3 class="card-title text-primary band-member-name">Jhonny Guitar</h3>
+                <h3 class="card-title text-primary band-member-name">Flea</h3>
+                <p class="card-text band-member-position">Lead bass</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 band-member">
+              <img
+                src="src/img/josh.jpg"
+                alt="our guitarist"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <h3 class="card-title text-primary band-member-name">Josh Klinghoffer </h3>
                 <p class="card-text band-member-position">Lead guitar</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="card border-0 band-member">
               <img
-                src="https://picsum.photos/150/120?random=3"
+                src="src/img/chad.jpg"
                 alt="our drummer"
                 class="card-img-top img-fluid"
               />
               <div class="card-body">
-                <h3 class="card-title text-primary band-member-name">Jhonny Drums</h3>
+                <h3 class="card-title text-primary band-member-name">Chad Smith</h3>
                 <p class="card-text band-member-position">Drums</p>
               </div>
             </div>
@@ -142,29 +155,40 @@
     <!--/about section-->
     <div class="parallax parallax-home"></div>
     <!--our music-->
-    <section class="music text-center">
+    <section id="music" class="music text-center">
       <div class="container music-container">
         <h2 class="display-2 music-title">Our Music</h2>
         <div class="row justify-content-center no-gutters">
           <div class="col-sm-3 col">
-            <img src="https://picsum.photos/400/400?random=1" alt="" class="img-fluid" />
+            <img src="src/img/cover-the-uplift-mofo-party-plan.jpg" alt="" class="img-fluid" />
           </div>
           <div class="col-sm-3 col">
-            <img src="https://picsum.photos/400/400?random=2" alt="" class="img-fluid" />
+            <img src="src/img/cover-mother's-milk.jpg" alt="" class="img-fluid" />
           </div>
           <div class="col-sm-3 col">
-            <img src="https://picsum.photos/400/400?random=3" alt="" class="img-fluid" />
+            <img src="src/img/cover-blood-sugar-sex-magik.jpg" alt="" class="img-fluid" />
           </div>
         </div>
         <div class="row justify-content-center no-gutters">
           <div class="col-sm-3 col">
-            <img src="https://picsum.photos/400/400?random=4" alt="" class="img-fluid" />
+            <img src="src/img/cover-one-hot-minute.jpg" alt="" class="img-fluid" />
           </div>
           <div class="col-sm-3 col">
-            <img src="https://picsum.photos/400/400?random=5" alt="" class="img-fluid" />
+            <img src="src/img/cover-californication.jpg" alt="" class="img-fluid" />
           </div>
           <div class="col-sm-3 col">
-            <img src="https://picsum.photos/400/400?random=6" alt="" class="img-fluid" />
+            <img src="src/img/cover-by-the-way.jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row justify-content-center no-gutters">
+          <div class="col-sm-3 col">
+            <img src="src/img/cover-stadium-arcadium.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-3 col">
+            <img src="src/img/cover-i'm-with-you.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-3 col">
+            <img src="src/img/cover-the-getaway.jpg" alt="" class="img-fluid" />
           </div>
         </div>
         <p class="music-cta">See someting you like?</p>
@@ -173,7 +197,7 @@
     </section>
 
 <!--shows-->
-<section class="upcoming-shows">
+<section id="upcoming" class="upcoming-shows">
     <div class="container">
         <h2 class="display-2 text-center">Upcoming Shows</h2>
         <div class="row no-gutters shows">
