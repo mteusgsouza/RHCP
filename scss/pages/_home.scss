@@ -12,7 +12,6 @@
 }
 
 // about
-
 .about {
   background: $black;
 }
@@ -62,10 +61,13 @@
   font-size: 0.7em;
 }
 
+//our music
+
 .music {
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
+
 
 .album:hover {
   z-index: 99;
@@ -74,11 +76,13 @@
   transition: transform 350ms ease-in-out;
 }
 
+
+
 .music-container {
   background: $black;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
-  padding-top: 7vh;
-  padding-bottom: 7vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
 .music-title {
