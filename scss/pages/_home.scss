@@ -1,10 +1,17 @@
+// home
+*{
+  transition: 250ms ease-in-out;
+}
 .hero {
   background-image: url(../img/chilli-peppers.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   padding-top: 29vh;
   padding-bottom: 15vh;
 }
+
+// about
 
 .about {
   background: $black;
@@ -14,8 +21,13 @@
   background: url(../img/theband.jpg);
   background-size: cover;
   background-position: center;
-  color: $brand-primary;
+  color: $white;
   min-height: 40vw;
+  @include media-breakpoint-up(xs) {
+    background-position: top;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+  }
 }
 
 .about-text {
@@ -40,19 +52,26 @@
 
 .band-member-name {
   font-family: $sans;
-  font-size: 1.3em;
+  font-size: 0.8em;
   text-transform: uppercase;
   margin-bottom: 0.25em;
 }
 
 .band-member-position {
   color: $gray-500;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .music {
   margin-top: 5em;
   margin-bottom: 5em;
+}
+
+.album:hover {
+  z-index: 99;
+  transform: scale(1.05);
+  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
+  transition: transform 350ms ease-in-out;
 }
 
 .music-container {
@@ -74,6 +93,8 @@
   margin-top: 2em;
 }
 
+// upcoming shows
+
 .show-title {
   font-family: $sans;
 }
@@ -81,7 +102,8 @@
 .show-info {
   display: flex;
   flex-direction: column;
-
+  color: $white;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .show-info > * {
@@ -104,6 +126,6 @@
   }
   .fas {
     margin-right: 0.5em;
-    transform: rotate(-20deg)
+    transform: rotate(-20deg);
   }
 }
