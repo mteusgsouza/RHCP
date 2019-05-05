@@ -17,10 +17,12 @@
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <link href="vendor/font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
     <!--animte-->
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link href="vendor/animate/animate.min.css"rel="stylesheet">
+    <!--video modal-->
+    <link href="vendor/venobox/venobox.css" rel="stylesheet" >
 
     <!-- custom style for this template -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link href="css/main.css" rel="stylesheet"/>
 
 
 
@@ -72,22 +74,23 @@
     </nav>
     <!--/navbar-->
     <!--header-->
-    <section id="home" class="hero text-center">
-      <div class="container">
+    <section id="hero" class="hero text-center">
+      <div class="container wow fadeIn">
         <h1 class="display-2">Red Hot Chilli Peppers</h1>
         <div class="row justify-content-center">
-          <div class="col-md-8">
+          <div class="mb-4">
             <p class="lead">
               Dark necessities are part of my design 
             </p>
-            <a href="#" class="btn btn-primary">Listen to our music</a>
+            <a href="https://www.youtube.com/watch?v=Q0oIoR9mLwc" class="venobox btn btn-primary" data-vbtype="video"
+            data-autoplay="true">Listen to our music</a>
           </div>
         </div>
       </div>
     </section>
     <!--/header-->
     <!--about-->
-    <section id="about" class="about">
+    <section id="about" class="about wow fadeIn">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 about-title d-flex align-items-center justify-content-center">
@@ -167,7 +170,7 @@
     <!--/about section-->
     <div class="parallax parallax-home"></div>
     <!--our music-->
-    <section id="music" class="music text-center">
+    <section id="music" class="music text-center wow fadeIn">
       <div class="container music-container">
         <h2 class="display-2 music-title">Our Music</h2>
         <div class="row justify-content-center no-gutters">
@@ -204,7 +207,7 @@
     </section>
 
 <!--shows-->
-  <section id="upcoming" class="upcoming-shows">
+  <section id="upcoming" class="upcoming-shows wow fadeIn">
     <div class="container">
         <h2 class="display-2 text-center">Upcoming Shows</h2>
         <div class="row no-gutters shows">
@@ -284,7 +287,9 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/venobox/venobox.min.js"></script>
+    <script src="vendor/wow/wow.min.js"></script>
     <!--custom script-->
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

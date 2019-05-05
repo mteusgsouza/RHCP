@@ -5201,6 +5201,7 @@ h1, h2, h3, h4, h5, h6 {
     #mainNav .navbar-brand svg:hover .cls-1 {
       fill: #b3b3b3; }
   #mainNav .navbar-nav .nav-item .nav-link {
+    text-align: end;
     font-size: 90%;
     font-weight: 700;
     padding: 0.75em 0;
@@ -5299,10 +5300,27 @@ footer {
   -o-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out; }
 
+.wow {
+  visibility: hidden; }
+
+a {
+  color: #f82249;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+a:hover,
+a:active,
+a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none; }
+
 .hero {
   background-image: url(../img/chilli-peppers.jpg);
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   padding-top: 29vh;
   padding-bottom: 20vh; }
 
