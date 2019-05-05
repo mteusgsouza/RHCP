@@ -16,6 +16,9 @@
     background-color: $brand-primary;
     outline-color: lighten($brand-primary, 30);
     @include heading-font;
+    &:hover{
+      background-color: lighten($brand-primary, 10);
+    }
   }
   //logo
   .navbar-brand {
