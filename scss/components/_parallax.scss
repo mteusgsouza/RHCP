@@ -1,7 +1,7 @@
 .parallax {
   display: none;
   @include media-breakpoint-up(lg) {
-    height: 30vmax;
+    height: 35vmax;
     background-size: cover;
     background-attachment: fixed;
     background-position: top;

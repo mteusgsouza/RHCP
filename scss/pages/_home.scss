@@ -6,28 +6,76 @@
   visibility: hidden;
 }
 
-a {
-  color: #f82249;
-  transition: 0.5s;
-}
-
-a:hover,
-a:active,
-a:focus {
-  color: #f8234a;
-  outline: none;
-  text-decoration: none;
-}
-
 .hero {
   background-image: url(../img/chilli-peppers.jpg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
   padding-top: 29vh;
-  padding-bottom: 20vh;
+  padding-bottom: 30vh;
+  @media (min-width:1500px ) {
+    padding-bottom: 40vh;
+  }
+  .play-btn {
+    background: $primary;
+    color: #fff;
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 5.5em;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    @media (max-width:990px) {
+      top:10em;
+    }
+    @media (max-width:768px) {
+      top:15em;
+    }
+    &:hover{
+      background: lighten($primary, 10);
+    }
+    &:hover .fas{
+      transform: scale(0.8);
+      color: lighten($gray, 50);
+    }
+    i {
+      line-height: 90px;
+      margin-left: 9px;
+    }
+    &::after { //pulse
+      content: "";
+      position: absolute;
+      border: 3px solid $primary;
+      border-radius: 50%;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      top: -20px;
+      animation: animate 2.5s linear infinite;
+      opacity: 0;
+    }
+    &:hover::after {
+      animation-duration: 0.8s;
+      border: 2px solid lighten($primary, 10);
+    }
+    @keyframes animate {
+      0% {
+        transform: scale(0.5);
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+  }
 }
-
 
 // #hero {
 // 	.play-btn {
@@ -93,7 +141,6 @@ a:focus {
 // 		}
 // 	}
 // }
-
 
 // about
 .about {

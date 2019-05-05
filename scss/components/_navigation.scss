@@ -2,6 +2,9 @@
 #mainNav {
   background-color: $black;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
+
+  //toggle menu
+  
   .navbar-toggler {
     font-size: .8em;
     font-weight: $bold;
@@ -11,9 +14,10 @@
     color: white;
     border: 0;
     background-color: $brand-primary;
+    outline-color: lighten($brand-primary, 30);
     @include heading-font;
   }
-
+  //logo
   .navbar-brand {
     color: $primary;
     @include script-font;
@@ -25,7 +29,7 @@
     }
     svg {
       position: absolute;
-      margin-top: -1em;
+      margin-top: -.9em;
       transform: scale(0.9);
     }
     svg:hover {
@@ -37,14 +41,14 @@
       }
     }
   }
-
+  //nav toglled
   .navbar-nav {
     .nav-item {
       .nav-link {
         text-align: end;
         font-size: 90%;
         font-weight: $bold;
-        padding: 0.75em 0;
+        padding: 0.2em 0;
         letter-spacing: 1px;
         color: white;
         @include heading-font;
@@ -59,11 +63,6 @@
 //expand
 @media(min-width:992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: $black;
     .navbar-brand {
