@@ -167,29 +167,27 @@
   margin-top: 2em;
 }
 
-.show-title {
-  font-family: $sans;
-  @media (max-width: 1000px) {
-    font-size: 1em;
-  }
-}
-
 .show-info {
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
   color: $white;
   background: rgba(0, 0, 0, 0.6);
   @media (max-width: 1000px) {
-    font-size: 1em;
-    .btn {
-      margin-left: 20%;
-      margin-right: 20%;
-    }
+    font-size: .9em;
   }
 }
 
 .show-info > * {
   margin-bottom: 0;
+}
+.show-title {
+  font-family: $sans;
+  font-weight: $bold;
+  font-size: 1.4em;
+  @media (max-width: 1000px) {
+    font-size: 1.7em;    
+  }
 }
 
 .date {
