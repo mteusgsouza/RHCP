@@ -5171,6 +5171,30 @@ h1, h2, h3, h4, h5, h6 {
 .lead {
   margin-bottom: 1.5em; }
 
+.show-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.4em; }
+  @media (max-width: 1000px) {
+    .show-title {
+      font-size: 1.7em; } }
+
+.date {
+  font-weight: 700;
+  margin-top: 1.25em; }
+  .date .far {
+    margin-right: 0.5em; }
+
+.price {
+  font-weight: 700; }
+  .price small {
+    font-weight: 400; }
+  .price .fas {
+    margin-right: 0.5em;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg); }
+
 #mainNav {
   background-color: #1f1f1f;
   -webkit-box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
@@ -5382,8 +5406,7 @@ footer {
     transform: scale(0.9); } }
 
 .about {
-  background: #1f1f1f;
-  padding-top: 2em; }
+  background: #1f1f1f; }
 
 .about-title {
   background: url(../img/theband.jpg);
@@ -5447,14 +5470,13 @@ footer {
   background: #1f1f1f;
   -webkit-box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
-  padding-top: 4vmin;
   padding-bottom: 4vh; }
 
 .music-title {
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.3em; }
 
 .music-cta {
-  margin-top: 2em; }
+  margin-top: 1.5em; }
 
 .upcoming-shows {
   padding-top: 2em; }
@@ -5479,27 +5501,3 @@ footer {
 
 .show-info > * {
   margin-bottom: 0; }
-
-.show-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.4em; }
-  @media (max-width: 1000px) {
-    .show-title {
-      font-size: 1.7em; } }
-
-.date {
-  font-weight: 700;
-  margin-top: 1.25em; }
-  .date .far {
-    margin-right: 0.5em; }
-
-.price {
-  font-weight: 700; }
-  .price small {
-    font-weight: 400; }
-  .price .fas {
-    margin-right: 0.5em;
-    -webkit-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    transform: rotate(-20deg); }
