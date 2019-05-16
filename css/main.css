@@ -5311,7 +5311,9 @@ footer {
     .hero {
       padding-bottom: 40vh; } }
   .hero .play-btn {
-    background: #bd0837;
+    background-color: #bd0837;
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.3);
     color: #fff;
     font-size: 50px;
     width: 90px;
@@ -5331,51 +5333,53 @@ footer {
       .hero .play-btn {
         top: 15em; } }
     .hero .play-btn:hover {
-      background: #ee0a45; }
+      background: #f63567;
+      -webkit-box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.5); }
     .hero .play-btn:hover .fas {
       -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
       transform: scale(0.8);
-      color: #adadad; }
+      color: #c6c6c6; }
     .hero .play-btn i {
       line-height: 90px;
       margin-left: 9px; }
     .hero .play-btn::after {
       content: "";
       position: absolute;
-      border: 3px solid #bd0837;
+      border: 20px solid #bd0837;
       border-radius: 50%;
       left: -20px;
       right: -20px;
       bottom: -20px;
       top: -20px;
-      -webkit-animation: animate 2.5s linear infinite;
-      animation: animate 2.5s linear infinite;
+      -webkit-animation: animate 1.5s linear infinite;
+      animation: animate 1.5s linear infinite;
       opacity: 0; }
     .hero .play-btn:hover::after {
-      -webkit-animation-duration: 0.8s;
-      animation-duration: 0.8s;
-      border: 2px solid #ee0a45; }
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      border: 10px solid #f63567; }
 
 @-webkit-keyframes animate {
   0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5); }
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6); }
   50% {
     opacity: 1; }
   100% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); } }
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
 
 @keyframes animate {
   0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5); }
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6); }
   50% {
     opacity: 1; }
   100% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); } }
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
 
 .about {
   background: #1f1f1f;

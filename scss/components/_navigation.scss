@@ -13,11 +13,11 @@
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: $brand-primary;
-    outline-color: lighten($brand-primary, 30);
+    background-color: $primary;
+    outline-color: lighten($primary, 30);
     @include heading-font;
     &:hover{
-      background-color: lighten($brand-primary, 10);
+      background-color: lighten($primary, 10);
     }
   }
   //logo
@@ -90,7 +90,7 @@
         }
       }
     }
-    &.navbar-shrink {
+    &.navbar-shrink { //scrolling
       top:0;
       padding-top: 0;
       padding-bottom: 0;

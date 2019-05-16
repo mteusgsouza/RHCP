@@ -18,8 +18,9 @@
   }
 
   .play-btn {
-    background: $primary;
-    color: #fff;
+    background-color: $primary;
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.3);
+    color: $white;
     font-size: 50px;
     width: 90px;
     height: 90px;
@@ -38,41 +39,43 @@
       top:15em;
     }
     &:hover{
-      background: lighten($primary, 10);
+      background: lighten($primary, 20);
+      box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.5);
     }
     &:hover .fas{
       transform: scale(0.8);
-      color: lighten($gray, 50);
+      color: lighten($gray, 60);
     }
     i {
       line-height: 90px;
       margin-left: 9px;
     }
+    
     &::after { //pulse
       content: "";
       position: absolute;
-      border: 3px solid $primary;
+      border: 20px solid $primary;
       border-radius: 50%;
       left: -20px;
       right: -20px;
       bottom: -20px;
       top: -20px;
-      animation: animate 2.5s linear infinite;
+      animation: animate 1.5s linear infinite;
       opacity: 0;
     }
     &:hover::after {
-      animation-duration: 0.8s;
-      border: 2px solid lighten($primary, 10);
+      animation-duration: 0.5s;
+      border: 10px solid lighten($primary, 20);
     }
     @keyframes animate {
       0% {
-        transform: scale(0.5);
+        transform: scale(0.6);
       }
       50% {
         opacity: 1;
       }
       100% {
-        transform: scale(1.1);
+        transform: scale(0.9);
       }
     }
   }
