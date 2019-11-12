@@ -1,43 +1,51 @@
-body{
-    font-family: $sans;
-    font-size: 1.4rem;
-    font-weight: $light;
-    padding-top: 7vh;
+body {
+  font-family: $sans;
+  font-size: 1.4rem;
+  font-weight: $light;
+  padding-top: 7vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $header-font;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
 }
 
-.lead{
-    margin-bottom: 1.5em;
+.lead {
+  margin-bottom: 1.5em;
 }
 
 .show-title {
-    font-family: $sans;
-    font-weight: $bold;
-    font-size: 1.4em;
-    @media (max-width: 1000px) {
-      font-size: 1.7em;    
-    }
+  font-family: $sans;
+  font-weight: $bold;
+  font-size: 1.4em;
+}
+
+@media (max-width: 1000px) {
+  .show-title {
+    font-size: 1.7em;
   }
-  
-  .date {
-    font-weight: $bold;
-    margin-top: 1.25em;
-    .far {
-      margin-right: 0.5em;
-    }
+}
+
+.date {
+  font-weight: $bold;
+  margin-top: 1.25em;
+  .far {
+    margin-right: 0.5em;
   }
-  
-  .price {
-    font-weight: $bold;
-  
-    small {
-      font-weight: $normal;
-    }
-    .fas {
-      margin-right: 0.5em;
-      transform: rotate(-20deg);
-    }
+}
+
+.price {
+  font-weight: $bold;
+
+  small {
+    font-weight: $normal;
   }
+  .fas {
+    margin-right: 0.5em;
+    transform: rotate(-20deg);
+  }
+}
