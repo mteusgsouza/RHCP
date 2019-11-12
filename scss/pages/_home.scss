@@ -109,6 +109,16 @@
   }
 }
 
+//card
+#band-members{
+  
+  @include media-breakpoint-up(lg){
+    clear: both;
+    margin-bottom: 250px;
+  }
+  
+}
+
 .band-member {
   margin-bottom: 1.5em;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);

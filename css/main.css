@@ -5278,7 +5278,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .parallax {
   display: none; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .parallax {
       height: 35vmax;
       background-size: cover;
@@ -5433,6 +5433,11 @@ footer {
     .about-text {
       padding-top: 10vh;
       padding-bottom: 15vh; } }
+
+@media (min-width: 992px) {
+  #band-members {
+    clear: both;
+    margin-bottom: 250px; } }
 
 .band-member {
   margin-bottom: 1.5em;

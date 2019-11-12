@@ -1,6 +1,6 @@
 .parallax {
   display: none;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     height: 35vmax;
     background-size: cover;
     background-attachment: fixed;
